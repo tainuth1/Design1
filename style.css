@@ -12,7 +12,7 @@
     background-color: #003D29;
 }
 .header{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -37,10 +37,11 @@
     width: 100%;
 }
 .nav-bar{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     padding: 12px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -70,4 +71,47 @@
 .acc-cart{
     display: flex;
     gap: 30px;
+}
+
+/* =====Home Page===== */
+.back-home{
+    width: 100%;
+}
+.home{
+    width: 1200px;
+    margin: auto;
+    background-color: #FBF0E4;
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px;
+    overflow: hidden;
+}
+.content{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 50px;
+}
+.content h2{
+    font-size: 45px;
+    color: #003D29;
+}
+.content button{
+    border: none;
+    color: white;
+    background-color: #003D29;
+    font-size: 17px;
+    padding: 13px 25px;
+    border-radius: 50px;
+}
+.image{
+    padding-left: 50px;
+}
+.image img{
+    width: 280px;
+    margin-top: 10px;
 }
